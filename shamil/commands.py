@@ -1,21 +1,3 @@
-# A Subinps Project
-# Pyrogram - Telegram MTProto API Client Library for Python
-# Copyright (C) 2017-2020 Dan <https://github.com/delivrance>
-#
-# This file is part of Pyrogram.
-#
-# Pyrogram is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License as published
-# by the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# Pyrogram is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License for more details.
-#
-# You should have received a copy of the GNU Lesser General Public License
-# along with Pyrogram.  If not, see <http://www.gnu.org/licenses/>.
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
@@ -30,7 +12,7 @@ CHAT=Config.CHAT
 
 HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\n• Iam A Bot Project by MwK MusicS\n• I Can Manage Group VC's\n\n• Hit /help to know about available commands.</b>"
 HELP = """
-🎧 <b>I Can Play Music On VoiceChats 🤪</b>
+🎧 <b><>𝐼 𝐶𝑎𝑛 𝑃𝑙𝑎𝑦 𝑀𝑢𝑠𝑖𝑐,𝑌𝑇 𝐿𝑖𝑣𝑒𝑠 𝑂𝑛 𝑉𝑜𝑖𝑐𝑒 𝐶ℎ𝑎𝑡🤪</b>
 
 🎶 **Common Commands**:
 • `/current`  __Show current playing song__
@@ -56,11 +38,6 @@ HELP = """
 • `/unmute`  __Unmute in VC__
 • `/update` __Update Current Settings n Restarts the Bot__
 
-© Powered By 
-[ __@mwkBoTs | @subin_works__ ]
-"""
-
-
 
 @Client.on_message(filters.command('start'))
 async def start(client, message):
@@ -68,13 +45,8 @@ async def start(client, message):
         [
         InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
                 ],[
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
-                ],[
-                InlineKeyboardButton('🤖 Developer', url='t.me/subinps'),
-                InlineKeyboardButton('Bugs', url='t.me/subin_works')
-                ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('👨‍💻𝕯𝖊𝖛', url='https://t.me/Joseph_Alex_TG'),
+                InlineKeyboardButton('💬𝚂𝚞𝚙𝚙𝚘𝚛𝚝', url='https://t.me/TGOpensource'
             ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_photo(photo="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
@@ -85,13 +57,8 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
             [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
-                ],[
-                InlineKeyboardButton('🤖 Developer', url='t.me/subinps'),
-                InlineKeyboardButton('Bugs', url='t.me/subin_works')
-                ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('👨‍💻𝕯𝖊𝖛', url='https://t.me/Joseph_Alex_TG'),
+                InlineKeyboardButton('💬𝚂𝚞𝚙𝚙𝚘𝚛𝚝', url='https://t.me/TGOpensource')
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
