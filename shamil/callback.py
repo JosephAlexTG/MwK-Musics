@@ -1,5 +1,4 @@
 
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, emoji
 from utils import mp
@@ -33,10 +32,6 @@ HELP = """
 • `/mute`  __Mute in VC__
 • `/unmute`  __Unmute in VC__
 • `/update` __Update Current Settings n Restarts the Bot__
-
-© Powered By 
-[ __@mwkBoTs | @subin_works__ ]
-
 
 
 @Client.on_callback_query()
@@ -145,13 +140,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
-                ],[
-                InlineKeyboardButton('🤖 Developer', url='t.me/subinps'),
-                InlineKeyboardButton('Bugs', url='t.me/subin_works')
-                ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('👨‍💻𝕯𝖊𝖛', url='https://t.me/mwklinks'),
+                InlineKeyboardButton('💬𝚂𝚞𝚙𝚙𝚘𝚛𝚝', url='https://t.me/TGOpensource')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
