@@ -7,7 +7,7 @@ playlist=Config.playlist
 
 HELP = """
 
-🎧 <b>I Can Play Music On VoiceChats 🤪</b>
+🎧 <b>𝐼 𝐶𝑎𝑛 𝑃𝑙𝑎𝑦 𝑀𝑢𝑠𝑖𝑐,𝑌𝑇 𝐿𝑖𝑣𝑒𝑠 𝑂𝑛 𝑉𝑜𝑖𝑐𝑒 𝐶ℎ𝑎𝑡🤪</b>
 
 🎶 **Common Commands**:
 • `/current`  __Show current playing song__
@@ -42,7 +42,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
         group_call.restart_playout()
         if not playlist:
-            pl = f"😖 Nothing On Que Ser"
+            pl = f"😖𝑁𝑜𝑡ℎ𝑖𝑛𝑔 𝑂𝑛 𝑄𝑢𝑒 𝑆𝑒𝑟"
         else:
             pl = f"🎧 **Playlist**:\n" + "\n".join([
                 f"**{i}**. **📻{x[1]}**\n   👤**Requested by:** {x[4]}"
